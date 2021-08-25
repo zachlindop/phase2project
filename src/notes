@@ -1,0 +1,149 @@
+Notes
+topic:food 
+
+Asian food
+    Orange chicken
+    Seasame chicken
+    Chow Mein
+    Shrimp fried rice
+
+Mexican food
+    Tacos    
+    Nachos
+    Enchiladas
+    Quesadilla
+
+American food
+    Burger and fries
+    Hot dog
+    Steak and potatoes
+    Fried Chicken
+
+{
+    "Food": [
+        "id": 1
+        "name": Hot dog
+        "type": American
+    ]
+
+
+
+"American Food" : [
+  {
+    "id": 1
+    "name": "Hot Dog"
+    "good-for": "Baseball Games"]
+  },
+
+  {
+    "id": 2
+   "name": "Burger and Fries"
+   "good-for": "Weekends"
+  },
+
+{
+    "id": 3
+    "name": "Steak and potatoes"
+    "good-for": Weeknight Dinners
+
+},
+
+{
+    "id": 4
+    "name": "Fried Chicken"
+    "good-for": "Parties"
+
+}
+
+"Mexican Food" : [
+
+    {
+        "id": 1
+        "name:" "Taco"
+        "good-for": "convenience"
+
+    }
+
+    {
+        "id": 2
+        "name:" "Nachos"
+        "good-for": "appetizers"
+
+    }
+
+    {
+        "id": 3
+        "name": "Enchiladas"
+        "good-for": "gatherings"
+
+
+    }
+    {
+        "id": 4
+        "name": "Quesadilla"
+        "good-for": "kids"
+
+    }
+]
+    "Asian Food":[
+        {
+            "id": 1
+            "name": "Orange Chicken"
+            "good-for": "every occasion"
+
+        }
+        {
+            "id": 2
+            "name": "Seasame Chicken"
+            "good-for": "dinner"
+
+
+
+        }
+   {
+            "id": 3
+            "name": "Chow Mein"
+            "good-for": "breakfast (served cold)"
+
+        }
+   {
+            "id": 4
+            "name": "Shrimp Frd rice"
+            "good-for": "Side"
+
+        }
+
+
+
+
+
+
+
+    ]
+
+
+
+
+
+
+
+
+
+]
+
+
+
+
+]
+
+
+
+
+
+
+
+
+
+
+
+}
