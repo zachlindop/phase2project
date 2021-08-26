@@ -1,65 +1,133 @@
 {
+    "American" : [
+
+    {
+      "id": 1,
+      "name": "Hot Dog",
+      "good-for": "Baseball Games"
+    },
+  
+    {
+      "id": 2,
+     "name": "Burger and Fries",
+     "good-for": "Weekends"
+    },
+  
+  {
+      "id": 3,
+      "name": "Steak & potatoes",
+      "good-for": "Weeknight Dinners"
+  
+  },
+  
+  {
+      "id": 4,
+      "name": "Fried Chicken",
+      "good-for": "Parties"
+  
+  }
+            ],
+  "Mexican" : [
+  
+      {
+          "id": 1,
+          "name": "Taco",
+          "good-for": "convenience"
+  
+      },
+  
+      {
+          "id": 2,
+          "name": "Nachos",
+          "good-for": "appetizers"
+  
+      },
+  
+      {
+          "id": 3,
+          "name": "Enchiladas",
+          "good-for": "gatherings"
+  
+  
+      },
+      {
+          "id": 4,
+          "name": "Quesadilla",
+          "good-for": "kids"
+  
+      }
+  ],
+      "Asian":[
+          {
+              "id": 1,
+              "name": "Orange Chicken",
+              "good-for": "every occasion"
+  
+          },
+          {
+              "id": 2,
+              "name": "Seasame Chicken",
+              "good-for": "dinner"
+  
+  
+  
+          },
+     {
+              "id": 3,
+              "name": "Chow Mein",
+              "good-for": "breakfast (served cold)"
+  
+          },
+     {
+              "id": 4,
+              "name": "Shrimp Fried rice",
+              "good-for": "Side"
+          }
+        ],
+        "Italian":[
+            {
+                "id": 1,
+                "name": "Lasagna",
+                "good-for": "Dinner"
+
+            },
+            {
+                "id": 2,
+                "name": "Spaghetti",
+                "good-for": "Lunch"
+
+            },
+            {
+                "id": 3,
+                "name": "Pizza",
+                "good-for": "parties"
+            },
+            {
+                "id": 4,
+                "name": "Gelato",
+                "good-for": "dessert"
 
 
-    "reActors": [
-
-        { 
-            "id": 1,
-            "name": "sam",
-            "hometown": "THEBOOGIEDOWN"
-        }
-            ,
-        { 
-            "id": 2,
-            "name": "Burt",
-            "hometown": "THEBOOGIEDOWN"
-
-        }
-
-    ]
-
-    ,
-
-    "pets": [
-
-        {
-            "id": 1,
-            "name": "Woobly",
-            "species": "cat"
-        }
-        ,
-        {
-            "id": 2,
-            "name": "Joobly",
-            "species": "dog"
-        }
-
-    ]
+            }
 
 
-    ,
-
-
-    "cats": [
-
-        {
-            "id": 1,
-            "name": "Woobly",
-            "species": "cat"
-        }
-
-    ]
-    ,
-    "dogs": [
-
-        {
-            "id": 1,
-            "name": "Joobly",
-            "species": "dog"
-        }
-
-    ]
+        ]
 
 
 
-} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+}

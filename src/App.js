@@ -1,18 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
-import New from './New';
+import { Route } from 'react-router-dom';
+import NavBar from './NavBar';
+import Home from './components/Home';
+import American from './components/American'
+import Asian from './components/Asian'
+import Italian from './components/Italian'
+import Mexican from './components/Mexican'
 
 function App() {
-  return (<>
+  
 
-  <BrowserRouter>
-    
-    <Route exact path="/new" component={New} />
-  </BrowserRouter>
-   
- </>);
+
+return (
+
+<div>
+
+  <NavBar />
+  
+  
+
+    <Route exact path="/">
+      <Home />
+    </Route>
+
+
+    <Route exact path="/American">
+      <American />
+    </Route>
+
+    <Route exact path ="/Mexican">
+      <Mexican />
+    </Route>
+
+    <Route exact path = "/Asian">
+      <Asian />
+    </Route>
+
+    <Route exact path = "/Italian">
+      <Italian />
+    </Route>
+
+
+
+</div>
+);
+
+
 }
-
 export default App;

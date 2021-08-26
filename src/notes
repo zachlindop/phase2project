@@ -147,3 +147,123 @@ American food
 
 
 }
+
+function ToyForm({ handleSubmit }) {
+  const [name, setName] = useState('');
+  const [image, setImage] = useState('');
+
+  function onSubmit(e) {
+    e.preventDefault();
+
+    const newToy = {
+      name,
+      image,
+      likes: 0,
+    };
+
+    handleSubmit(newToy);
+  }
+
+  return (
+    <div className="container">
+      <form className="add-toy-form" onSubmit={onSubmit}>
+        <h3>Create a toy!</h3>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter a toy's name..."
+          className="input-text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <br />
+        <input
+          type="text"
+          name="image"
+          placeholder="Enter a toy's image URL..."
+          className="input-text"
+          value={image}
+          onChange={(e) => setImage(e.target.value)}
+        />
+        <br />
+        <input
+          type="submit"
+          name="submit"
+          value="Create New Toy"
+          className="submit"
+        />
+      </form>
+    </div>
+  );
+}
+
+APP
+
+const toysAPI = 'http://localhost:3001/toys';
+const headers = {
+  Accepts: 'application/json',
+  'Content-type': 'application/json',
+};
+
+function App() {
+  const [showForm, setShowForm] = useState(false);
+  const [toys, setToys] = useState([]);
+
+  function handleClick() {
+    setShowForm((showForm) => !showForm);
+  }
+
+  function addToy(toy) {
+    fetch(toysAPI, {
+      method: 'POST',
+      body: JSON.stringify(toy),
+      headers,
+    })
+      .then((res) => res.json())
+      .then((json) => setToys([...toys, json]));
+  }
+
+  function deleteToy(id) {
+    fetch(`${toysAPI}/${id}`, {
+      method: 'DELETE',
+      headers,
+    }).then(() => setToys(toys.filter((toy) => toy.id !== id)));
+  }
+
+  function incrementLikes(toy) {
+    fetch(`${toysAPI}/${toy.id}`, {
+      method: 'PATCH',
+      headers,
+      body: JSON.stringify({ likes: toy.likes + 1 }),
+    }).then(() =>
+      setToys(
+        toys.map((oldToy) =>
+          oldToy.id !== toy.id 
+            ? oldToy 
+            : { ...oldToy, likes: oldToy.likes + 1 }
+        )
+      )
+    );
+  }
+
+  useEffect(() => {
+    fetch(toysAPI)
+      .then((res) => res.json())
+      .then((json) => setToys(json));
+  }, []);
+
+  return (
+    <>
+      <Header />
+      {showForm ? <ToyForm handleSubmit={addToy} /> : null}
+      <div className="buttonContainer">
+        <button onClick={handleClick}>Add a Toy</button>
+      </div>
+      <ToyContainer
+        toys={toys}
+        handleDelete={deleteToy}
+        handleClickLikes={incrementLikes}
+      />
+    </>
+  );
+}
