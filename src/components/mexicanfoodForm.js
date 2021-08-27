@@ -42,7 +42,7 @@ function FoodForm({ handleSubmit }) {
           <input
             type="submit"
             name="submit"
-            value="Add a New American Food"
+            value="Add a New Mexican Food"
             className="submit"
           />
         </form>
@@ -55,5 +55,5 @@ function FoodForm({ handleSubmit }) {
 
 
 
-
   
+    
