@@ -102,22 +102,22 @@ return (
   <div className="buttons">
     <div>
 {showAmericanForm ? <FoodForm post={setPostReRender} handleSubmit={addAmericanFood}/> : null}
-<button onClick={handleClickAmerican}>Add Food</button>
+<button onClick={handleClickAmerican}>Add American Food</button>
 </div>
 
 <div>
 {showMexicanForm ? <MexicanForm post={setPostReRender} handleSubmit={addMexicanFood}/> : null}
-<button onClick={handleClickMexican}>Add Food</button>
+<button onClick={handleClickMexican}>Add Mexican Food</button>
 </div>
 
 <div>
 {showItalianForm ? <ItalianForm post={setPostReRender} handleSubmit={addItalianFood}/> : null}
-<button onClick={handleClickItalian}>Add Food</button>
+<button onClick={handleClickItalian}>Add Italian Food</button>
 </div>
 
 <div>
 {showAsianForm ? <AsianForm post={setPostReRender} handleSubmit={addAsianFood}/> : null}
-<button onClick={handleClickAsian}>Add Food</button>
+<button onClick={handleClickAsian}>Add Asian Food</button>
 </div>
 
 </div>

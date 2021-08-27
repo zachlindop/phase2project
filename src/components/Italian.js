@@ -12,7 +12,7 @@ function Italian() {
     return (<>
 
         <h2> Italian Food </h2>
-        {italian.map(item => <div>{item.name}</div>)}
+        {italian.map(item => <div>{item.name}{item.image}</div>)}
 
     </>)
 }

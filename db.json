@@ -19,67 +19,6 @@
       "id": 4,
       "name": "Fried Chicken",
       "good-for": "Parties"
-    },
-    {
-      "name": "joy",
-      "image": "",
-      "id": 5
-    },
-    {
-      "name": "joy",
-      "image": "",
-      "id": 6
-    },
-    {
-      "name": "charizard",
-      "image": "",
-      "id": 7
-    },
-    {
-      "name": "charizard",
-      "image": "",
-      "id": 8
-    },
-    {
-      "name": "Pikachu",
-      "image": "",
-      "id": 9
-    },
-    {
-      "name": "Pikachu",
-      "image": "",
-      "id": 10
-    },
-    {
-      "name": "",
-      "image": "",
-      "id": 11
-    },
-    {
-      "name": "joy",
-      "image": "",
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
-      "name": "ppizza",
-      "id": 16
-    },
-    {
-      "name": "shawarma",
-      "id": 17
-    },
-    {
-      "name": "fries",
-      "id": 18
     }
   ],
   "Mexican": [
@@ -104,16 +43,12 @@
       "good-for": "kids"
     },
     {
-      "name": "tofu",
+      "name": "burrito",
       "id": 5
     },
     {
-      "name": "taco",
+      "name": "burrito",
       "id": 6
-    },
-    {
-      "name": "Enchiladas",
-      "id": 7
     }
   ],
   "Asian": [
@@ -136,25 +71,14 @@
       "id": 4,
       "name": "Shrimp Fried rice",
       "good-for": "Side"
-    },
-    {
-      "name": "beans",
-      "id": 5
-    },
-    {
-      "name": "Chow Fun",
-      "id": 6
-    },
-    {
-      "name": "Pot Stickers",
-      "id": 7
     }
   ],
   "Italian": [
     {
       "id": 1,
       "name": "Lasagna",
-      "good-for": "Dinner"
+      "good-for": "Dinner",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.YlSfPK0XrZfS_7jXeyRHMAHaE8&pid=Api&P=0&w=244&h=164"
     },
     {
       "id": 2,
@@ -172,12 +96,8 @@
       "good-for": "dessert"
     },
     {
-      "name": "rice",
+      "name": "gelato",
       "id": 5
-    },
-    {
-      "name": "Bread Sticks",
-      "id": 6
     }
   ]
 }
