@@ -10,11 +10,11 @@ function FoodForm({ handleSubmit }) {
   
       const newFood = {
         name,
-        Image
+        image
       };
   
       handleSubmit(newFood);
-      //window.location.reload()
+      
     }
   
     return (

@@ -117,7 +117,7 @@ return (
 
 <div>
 {showAsianForm ? <AsianForm post={setPostReRender} handleSubmit={addAsianFood}/> : null}
-<button onClick={handleClickAsian}>Add Asian Food</button>
+<button onClick={handleClickAsian}>Add Chinese Food</button>
 </div>
 
 </div>

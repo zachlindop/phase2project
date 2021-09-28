@@ -23,7 +23,7 @@ function NavBar(){
                 </NavLink>
 
                 <NavLink to="/Asian">
-                    <h4> Asian Food </h4>
+                    <h4> Chinese Food </h4>
                 </NavLink>
 
                 <NavLink to="/Italian">

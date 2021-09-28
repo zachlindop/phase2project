@@ -10,17 +10,17 @@ function FoodForm({ handleSubmit }) {
   
       const newFood = {
         name,
-        Image
+        image
       };
   
       handleSubmit(newFood);
-      //window.location.reload()
+    
     }
   
     return (
       <div className="container">
         <form className="add-newFood" onSubmit={onSubmit}>
-          <h3>Add Asian Food</h3>
+          <h3>Add Chinese Food</h3>
           <input
             type="text"
             name="name"

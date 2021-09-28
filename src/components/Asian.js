@@ -11,7 +11,7 @@ function Asian() {
 
     return (<div class="food">
 
-        <h1> Asian Food </h1>
+        <h1> Chinese Food </h1>
         {asian.map(item => 
         <div>
             <img class="image" src={item.image} />

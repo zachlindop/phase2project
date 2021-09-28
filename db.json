@@ -23,6 +23,11 @@
       "name": "Fried Chicken",
       "good-for": "Parties",
       "image": "https://tse1.mm.bing.net/th?id=OIP.rjUFXYf3QuOneI_lpyEoAwHaE8&pid=Api&P=0&w=260&h=174"
+    },
+    {
+      "name": "Chili",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.DeDJuR_o8PWrpF9H0Z6CUQHaLH&pid=Api&P=0&w=300&h=300",
+      "id": 5
     }
   ],
   "Mexican": [
@@ -51,7 +56,7 @@
       "image": "https://tse4.mm.bing.net/th?id=OIP.xQATkq6PXWEjDLTn_sq7GQHaE7&pid=Api&P=0&w=250&h=167"
     },
     {
-      "name": "burrito",
+      "name": "Burrito",
       "image": "https://tse1.mm.bing.net/th?id=OIP.xyW1yjf-LjcBpo6ahyvpYgHaE7&pid=Api&P=0&w=237&h=159",
       "id": 5
     }
@@ -80,6 +85,11 @@
       "name": "Shrimp Fried rice",
       "good-for": "Side",
       "image": "https://tse3.mm.bing.net/th?id=OIP.86Qbf0qxN50017GGNkbQAwHaFd&pid=Api&P=0&w=204&h=151"
+    },
+    {
+      "name": "Peking Duck",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.xlX_onmUtfexBXy9Q7SoGAHaFA&pid=Api&P=0&w=225&h=153",
+      "id": 5
     }
   ],
   "Italian": [
@@ -106,6 +116,11 @@
       "name": "Gelato",
       "good-for": "dessert",
       "image": "https://tse2.mm.bing.net/th?id=OIP.kUfrn7yMeWyE40xJ9bvZIgHaEk&pid=Api&P=0&w=246&h=153"
+    },
+    {
+      "name": "Eggplant Parmesan",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.lj-ILpgNrbx-ofMrtE2CVQHaE8&pid=Api&P=0&w=240&h=161",
+      "id": 5
     }
   ]
 }
