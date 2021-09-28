@@ -9,11 +9,17 @@ function Asian() {
             .then(data => setAsian(data))
         }, []);
 
-    return (<>
+    return (<div class="food">
 
-        <h2> Asian Food </h2>
-        {asian.map(item => <div>{item.name}</div>)}
+        <h1> Asian Food </h1>
+        {asian.map(item => 
+        <div>
+            <img class="image" src={item.image} />
+            <br></br>
+            <br></br>
+            {item.name}
+        </div>)}
 
-    </>)
+    </div>)
 }
 export default Asian;

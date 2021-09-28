@@ -10,11 +10,10 @@ function FoodForm({ handleSubmit }) {
   
       const newFood = {
         name,
-        Image
+        image
       };
   
       handleSubmit(newFood);
-      //window.location.reload()
     }
   
     return (
@@ -30,11 +29,19 @@ function FoodForm({ handleSubmit }) {
             onChange={(e) => setName(e.target.value)}
           />
           <br />
-          
+          <input
+          type="text"
+          name="image"
+          placeholder="Enter a food's image URL..."
+          className="input-text"
+          value={image}
+          onChange={(e) => setImage(e.target.value)}
+        />
+          <br />
           <input
             type="submit"
             name="submit"
-            value="Add a New Mexican Food"
+            value="Add New Food!"
             className="submit"
           />
         </form>

@@ -9,11 +9,19 @@ function Italian() {
             .then(data => setItalian(data))
         }, []);
 
-    return (<>
+    return (<div class="food">
 
-        <h2> Italian Food </h2>
-        {italian.map(item => <div>{item.name}{item.image}</div>)}
+        <h1> Italian Food </h1>
+        {italian.map(item => 
+        <div>
+            <img class="image" src={item.image} />
+            <br></br>
+            <br></br>
+            {item.name}
+        </div>)
+        }
 
-    </>)
+    </div>)
 }
 export default Italian;
+{/* <img src={game.game_image} /> */}

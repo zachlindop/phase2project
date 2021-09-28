@@ -5,7 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: beige;
+  /* background-color: beige; */
+  background-image: url(https://tse1.mm.bing.net/th?id=OIP.jBq0A4SIbAoOmZN45pGRIQHaDM&pid=Api&P=0&w=410&h=178);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: lighten;
+  background-repeat: repeat-y;
 }
 
 code {
@@ -13,4 +18,13 @@ code {
     monospace;
 }
 
+.food {
+  /* position: relative;
+  left: 350px; */
+  text-align: center;
+}
 
+.image {
+  width: 250px;
+  height: 250px;
+}

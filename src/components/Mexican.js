@@ -9,11 +9,17 @@ function Mexican() {
             .then(data => setMexican(data))
         }, []);
 
-    return (<>
+    return (<div class="food">
 
-        <h2> Mexican Food </h2>
-        {mexican.map(item => <div>{item.name}</div>)}
+        <h1> Mexican Food </h1>
+        {mexican.map(item => 
+        <div>
+            <img class="image" src={item.image}/>
+            <br></br>
+            <br></br>
+            {item.name}
+        </div>)}
 
-    </>)
+    </div>)
 }
 export default Mexican;

@@ -9,11 +9,17 @@ function American() {
             .then(data => setAmerican(data))
     }, []);
 
-    return (<>
+    return (<div class="food">
 
-        <h2> American Food </h2>
-        {american.map(item => <div>{item.name}</div>)}
+        <h1> American Food </h1>
+        {american.map(item => 
+        <div>
+            <img class="image" src={item.image}/>
+            <br></br>
+            <br></br>
+            {item.name}
+        </div>)}
 
-    </>)
+    </div>)
 }
 export default American;
