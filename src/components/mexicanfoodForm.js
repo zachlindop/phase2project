@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 function FoodForm({ handleSubmit }) {
     const [name, setName] = useState('');
+    const [good_for, setGood_for] = useState('');
     const [image, setImage] = useState('');
   
     function onSubmitMexican(e) {
@@ -10,6 +11,7 @@ function FoodForm({ handleSubmit }) {
   
       const newFood = {
         name,
+        good_for,
         image
       };
   
@@ -27,6 +29,15 @@ function FoodForm({ handleSubmit }) {
             className="input-text"
             value={name}
             onChange={(e) => setName(e.target.value)}
+          />
+          <br />
+          <input
+            type="text"
+            name="name"
+            placeholder="Is Great for!"
+            className="input-text"
+            value={good_for}
+            onChange={(e) => setGood_for(e.target.value)}
           />
           <br />
           <input

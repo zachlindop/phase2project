@@ -18,6 +18,8 @@ function American() {
             <br></br>
             <br></br>
             {item.name}
+            <br></br>
+            Good For: {item.good_for}
         </div>)}
 
     </div>)
