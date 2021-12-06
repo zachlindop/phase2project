@@ -30,6 +30,10 @@ function NavBar(){
                     <h4> Italian </h4>
                 </NavLink>
 
+                <NavLink to="/Indian">
+                    <h4> Indian </h4>
+                </NavLink>
+
 
                 
 

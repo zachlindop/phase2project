@@ -7,10 +7,12 @@ import American from './components/American'
 import Asian from './components/Asian'
 import Italian from './components/Italian'
 import Mexican from './components/Mexican'
+import Indian from './components/Indian'
 import FoodForm from './components/FoodForm';
 import MexicanForm from './components/mexicanfoodForm'
 import ItalianForm from './components/italianfoodForm'
 import AsianForm from './components/AsianfoodForm'
+import IndianForm from './components/IndianFoodForm'
 
 const AmericanAPI = 'http://localhost:3005/American';
 const headers = {
@@ -21,6 +23,7 @@ const headers = {
 const MexicanAPI = "http://localhost:3005/Mexican";
 const ItalianAPI = "http://localhost:3005/Italian";
 const AsianAPI = "http://localhost:3005/Asian";
+const IndianAPI = "http://localhost:3005/Indian";
 
 
 function App() {
@@ -29,6 +32,7 @@ function App() {
  const [showMexicanForm, setShowMexicanForm] = useState(false);
  const [showItalianForm, setShowItalianForm] = useState(false);
  const [showAsianForm, setShowAsianForm] = useState(false);
+ const [showIndianForm, setShowIndianForm] = useState(false);
   const [Meals, setMeals] = useState([]);
   const [newPostReRender, setPostReRender]=useState(false)
 
@@ -46,6 +50,10 @@ function App() {
 
   function handleClickAsian() {
     setShowAsianForm((showAsianForm) => !showAsianForm);
+  }
+
+  function handleClickIndian() {
+    setShowIndianForm((showIndianForm) => !showIndianForm)
   }
 
   function addAmericanFood(Meals) {
@@ -96,6 +104,19 @@ function App() {
      setPostReRender(!newPostReRender)
   
   }
+
+  function addIndianFood(Meals) {
+    fetch(IndianAPI, {
+      method: 'POST',
+      body: JSON.stringify(Meals),
+      headers,
+    
+    
+    })
+     setPostReRender(!newPostReRender)
+  
+  }
+
 return (
 
 <div className="buttonContainer" >
@@ -118,6 +139,11 @@ return (
 <div>
 {showAsianForm ? <AsianForm post={setPostReRender} handleSubmit={addAsianFood}/> : null}
 <button onClick={handleClickAsian}>Add Chinese Food</button>
+</div>
+
+<div>
+{showIndianForm ? <IndianForm post={setPostReRender} handleSubmit={addIndianFood}/> : null}
+<button onClick={handleClickIndian}>Add Indian Food</button>
 </div>
 
 </div>
@@ -147,9 +173,14 @@ return (
       <Italian />
     </Route>
 
+    <Route exact path = "/Indian">
+      <Indian />
+    </Route>
 
+    
 
 </div>
+
 );
 
 

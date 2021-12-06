@@ -9,7 +9,7 @@ function Asian() {
             .then(data => setAsian(data))
         }, []);
 
-    return (<div class="food">
+        return (<div class="food">
 
         <h1> Chinese Food </h1>
         {asian.map(item => 
