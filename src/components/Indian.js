@@ -13,7 +13,7 @@ return(
         <h1> Indian Food </h1>
         {indian.map(item => 
         <div>
-            <img class="image" src={item.image} />
+            <img class="image" src={item.image} alt="yummy foodie pic!" />
             <br></br>
             <br></br>
             {item.name}

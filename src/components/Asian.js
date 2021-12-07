@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 function Asian() {
     const [asian, setAsian] = useState([]);
-
+    const [toggleAsian, setToggleAsian] = useState(false)
     useEffect(() => {
         fetch("http://localhost:3005/Asian")
             .then(r => r.json())
@@ -14,12 +14,12 @@ function Asian() {
         <h1> Chinese Food </h1>
         {asian.map(item => 
         <div>
-            <img class="image" src={item.image} />
+            <img class="image" src={item.image} alt="yummy foodie pic!" />
             <br></br>
             <br></br>
             {item.name}
             <br></br>
-            Good For: {item.good_for}
+            <h3 onClick={() => setToggleAsian(!toggleAsian)}>{toggleAsian ? item.good_for : item.ingredients}</h3>
         </div>)}
 
     </div>)

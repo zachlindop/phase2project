@@ -40,7 +40,10 @@
 
 .buttons{
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.food{
+  flex-direction: row;
 }

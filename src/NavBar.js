@@ -38,7 +38,7 @@ function NavBar(){
                 
 
 
-        <h1></h1>
+        {/* <h1></h1> */}
 
 
             <br></br>

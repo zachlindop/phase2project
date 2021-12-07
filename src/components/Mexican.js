@@ -22,13 +22,13 @@ function Mexican() {
         //        setNewGames([...newGames, game]);
         //       //setShowReviewForm(!showReviewForm);
         //   })
-
+ 
     return (<div class="food">
 
         <h1> Mexican Food </h1>
         {mexican.map(item => 
         <div>
-            <img class="image" src={item.image}/>
+            <img class="image" src={item.image} alt="yummy foodie pic!"/>
             <br></br>
             <br></br>
             {item.name}

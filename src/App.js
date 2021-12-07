@@ -1,4 +1,4 @@
-import react, { useState } from "react"
+import { useState } from "react"
 import './App.css';
 import { Route } from 'react-router-dom';
 import NavBar from './NavBar';
@@ -33,7 +33,6 @@ function App() {
  const [showItalianForm, setShowItalianForm] = useState(false);
  const [showAsianForm, setShowAsianForm] = useState(false);
  const [showIndianForm, setShowIndianForm] = useState(false);
-  const [Meals, setMeals] = useState([]);
   const [newPostReRender, setPostReRender]=useState(false)
 
   function handleClickAmerican() {
