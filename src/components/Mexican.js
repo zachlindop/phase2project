@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 function Mexican() {
     const [mexican, setMexican] = useState([]);
-
+    const [toggleMexican, setToggleMexican] = useState(false);
     useEffect(() => {
         fetch("http://localhost:3005/Mexican")
             .then(r => r.json())
@@ -33,7 +33,7 @@ function Mexican() {
             <br></br>
             {item.name}
             <br></br>
-            Good For: {item.good_for}
+            <h3 onClick={() => setToggleMexican(!toggleMexican)}>{toggleMexican ? `Good For: ${item.good_for}` : `Ingredients: ${item.ingredients}`}</h3>
         </div>)}
 
     </div>)

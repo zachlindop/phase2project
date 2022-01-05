@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 function Italian() {
     const [italian, setItalian] = useState([]);
+    const [toggleItalian, setToggleItalian] = useState([])
 
     useEffect(() => {
         fetch("http://localhost:3005/Italian")
@@ -19,7 +20,8 @@ function Italian() {
             <br></br>
             {item.name}
             <br></br>
-            Good For: {item.good_for}
+            <h3 onClick={() => setToggleItalian(!toggleItalian)}>{toggleItalian ?`Good For: ${item.good_for}` : `Ingredients: ${item.ingredients}`}</h3>
+
         </div>)
         }
 

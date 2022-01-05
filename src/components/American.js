@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 function American() {
     const [american, setAmerican] = useState([]);
-    const [toggle, setToggle] = useState(false)
+    const [toggleAmerican, setToggleAmerican] = useState(false)
 
     useEffect(() => {
         fetch("http://localhost:3005/American")
@@ -20,7 +20,7 @@ function American() {
             <br/>
             <img class="image" src={item.image} alt="yummy foodie pic!"/>
             <br/>
-            <h3 onClick={() => setToggle(!toggle)}>{toggle ? item.good_for : item.ingredients}</h3>
+            <h3 onClick={() => setToggleAmerican(!toggleAmerican)}>{toggleAmerican ? `Good For: ${item.good_for}` : `Ingredients: ${item.ingredients}`}</h3>
         </div>)}
 
     </div>)

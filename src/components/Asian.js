@@ -1,25 +1,24 @@
 import { useEffect, useState } from 'react';
 
 function Asian() {
-    const [asian, setAsian] = useState([]);
-    const [toggleAsian, setToggleAsian] = useState(false)
+    const [chinese, setChinese] = useState([]);
+    const [toggleChinese, setToggleChinese] = useState(false)
     useEffect(() => {
         fetch("http://localhost:3005/Asian")
             .then(r => r.json())
-            .then(data => setAsian(data))
+            .then(data => setChinese(data))
         }, []);
 
         return (<div class="food">
 
         <h1> Chinese Food </h1>
-        {asian.map(item => 
+        {chinese.map(item => 
         <div>
+            <h2>{item.name}</h2>
+            <br/>
             <img class="image" src={item.image} alt="yummy foodie pic!" />
-            <br></br>
-            <br></br>
-            {item.name}
-            <br></br>
-            <h3 onClick={() => setToggleAsian(!toggleAsian)}>{toggleAsian ? item.good_for : item.ingredients}</h3>
+            <br/>
+            <h3 onClick={() => setToggleChinese(!toggleChinese)}>{toggleChinese ? `Good For: ${item.good_for}` : `Ingredients: ${item.ingredients}`}</h3>
         </div>)}
 
     </div>)
