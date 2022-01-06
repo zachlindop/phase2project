@@ -122,27 +122,31 @@
   "Indian": [
     {
       "id": 1,
-      "name": "Gobi Aloo",
+      "name": "Aloo Gobi",
       "good_for": "When you're on a diet",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QlbTgspvK2NLcCdyrSJhxgHaFt&pid=Api&rs=1&c=1&qlt=95&w=144&h=111"
+      "image": "https://tse1.mm.bing.net/th?id=OIP.QlbTgspvK2NLcCdyrSJhxgHaFt&pid=Api&rs=1&c=1&qlt=95&w=144&h=111",
+      "ingredients": "Potatoes, Cauliflower, Turmeric, Tomatoes, Onion"
     },
     {
       "id": 2,
       "name": "Saag Paneer",
       "good_for": "When you want your greens!",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.0da1pW-ZYlXofaHxaSUoHwHaE8&pid=Api&rs=1&c=1&qlt=95&w=168&h=112"
+      "image": "https://tse1.mm.bing.net/th?id=OIP.0da1pW-ZYlXofaHxaSUoHwHaE8&pid=Api&rs=1&c=1&qlt=95&w=168&h=112",
+      "ingredients": "Turmeric, Cayenne, Salt, Vegetable Oil, Paneer Cheese, Spinach, White Onion, Ginger, Garlic, Serrano Chile, Garam Masala, Coriander, Cumin, Yogurt"
     },
     {
       "id": 3,
       "name": "Chicken Tikka Masala",
       "good_for": "Dwali",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.RrdYWI6ETdLFN_4d4KwXnwHaE7&pid=Api&rs=1&c=1&qlt=95&w=176&h=117"
+      "image": "https://tse1.mm.bing.net/th?id=OIP.RrdYWI6ETdLFN_4d4KwXnwHaE7&pid=Api&rs=1&c=1&qlt=95&w=176&h=117",
+      "ingredients": "Chicken Breasts, Yogurt, Lemon Juice, Garlic, Ginger, Salt, Cumin, Garam Masala, Paprika"
     },
     {
       "id": 4,
       "name": "Samosa",
       "good_for": "After stressful day",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.KMO6sazuI17fjpj3OFpTkgHaFn&pid=Api&rs=1&c=1&qlt=95&w=154&h=117"
+      "image": "https://tse1.mm.bing.net/th?id=OIP.KMO6sazuI17fjpj3OFpTkgHaFn&pid=Api&rs=1&c=1&qlt=95&w=154&h=117",
+      "ingredients": "Flour, Green Chili, Ghee or Oil, Potatoes, Ginger, Peas, Coriander, Cilantro"
     }
   ]
 }

@@ -15,10 +15,9 @@ function Italian() {
         <h1> Italian Food </h1>
         {italian.map(item => 
         <div>
+            <h2>{item.name}</h2>
+            <br/>
             <img class="image" src={item.image} alt="yummy foodie pic!" />
-            <br></br>
-            <br></br>
-            {item.name}
             <br></br>
             <h3 onClick={() => setToggleItalian(!toggleItalian)}>{toggleItalian ?`Good For: ${item.good_for}` : `Ingredients: ${item.ingredients}`}</h3>
 

@@ -28,10 +28,9 @@ function Mexican() {
         <h1> Mexican Food </h1>
         {mexican.map(item => 
         <div>
+            <h2>{item.name}</h2>
+            <br/>
             <img class="image" src={item.image} alt="yummy foodie pic!"/>
-            <br></br>
-            <br></br>
-            {item.name}
             <br></br>
             <h3 onClick={() => setToggleMexican(!toggleMexican)}>{toggleMexican ? `Good For: ${item.good_for}` : `Ingredients: ${item.ingredients}`}</h3>
         </div>)}
