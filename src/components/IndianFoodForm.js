@@ -4,6 +4,7 @@ function IndianFoodForm({handleSubmit}){
     const [name, setName] = useState('');
     const [good_for, setGood_for] = useState('');
     const [image, setImage] = useState('');
+    const [ingredients, setIngredients] = useState('');
 
     function onSubmitIndian(e) {
         e.preventDefault();
@@ -11,7 +12,8 @@ function IndianFoodForm({handleSubmit}){
         const newFood = {
           name,
           good_for,
-          image
+          image,
+          ingredients
         };
     
         handleSubmit(newFood);
@@ -37,6 +39,15 @@ function IndianFoodForm({handleSubmit}){
               className="input-text"
               value={good_for}
               onChange={(e) => setGood_for(e.target.value)}
+            />
+            <br />
+            <input
+              type="text"
+              name="name"
+              placeholder="Ingredients"
+              className="input-text"
+              value={ingredients}
+              onChange={(e) => setIngredients(e.target.value)}
             />
             <br />
             <input
